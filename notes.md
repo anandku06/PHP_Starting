@@ -25,7 +25,6 @@
     // code
     ?> // ends with
     ```
-- every code in php ends with a semi-colon(;)
 
 ---
 
@@ -33,6 +32,27 @@
 
 ```php
 <?php
-echo "Hello World!!"; // echo is the cmd used to output anything on the browser or terminal
+echo "Hello World!!"; 
 ?>
 ```
+- echo cmd is used to output or print anything to the browser or terminal
+
+- every code in php ends with a semi-colon(;)
+
+---
+
+# Comments
+
+```php
+// this is a single-line comment
+/*
+This
+is
+a 
+multi-line
+comment
+*/
+```
+- comments are for notes or some guide for the developers and is ignored by the compiler or interpreter of the language
+
+---
