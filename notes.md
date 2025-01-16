@@ -15,3 +15,24 @@
 
 ---
 
+# Basic Syntax
+
+- can be placed anywhere in the document
+
+    ```php
+    // starts with
+    <?php 
+    // code
+    ?> // ends with
+    ```
+- every code in php ends with a semi-colon(;)
+
+---
+
+# First program
+
+```php
+<?php
+echo "Hello World!!"; // echo is the cmd used to output anything on the browser or terminal
+?>
+```
