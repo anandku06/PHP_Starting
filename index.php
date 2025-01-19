@@ -13,6 +13,8 @@ $age = 12; // no quotes around ; its a whole integer
 $gpa = 5.0; // float datatype ; having decimal
 $price = 49.99;
 $taxRate = 5.1;
+$quantity = 5;
+$total = null; // null means no value; not assigned yet
 
 $isEmployed = true; // represents 1 in php
 $isOnline = false; // represents the empty space in php
@@ -27,7 +29,12 @@ echo "<br>", "Your gpa is good -> {$gpa}";
 echo "<br>", "The price of the {$food} is \${$price}"; // to insert $ sign use escape sequence
 echo "<br>", "The tax rate for this thing is {$taxRate}%"; 
 echo "<br>", "Are you employed? (true/false) -> {$isEmployed}"; 
-echo "<br>", "Are you online? (true/false) -> {$isOnline}"; 
+// echo "<br>", "Are you online? (true/false) -> {$isOnline}"; 
+
+echo "<br> You have ordered {$quantity} plates of {$food} of \${$price}";
+$total = $price * $quantity;
+echo "<br> Your total is -> \${$total}";
+
 ?>
 
 <!DOCTYPE html>
