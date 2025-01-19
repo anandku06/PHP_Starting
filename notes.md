@@ -61,3 +61,6 @@ comment
 
 - a reusable container that holds data like string, integer, float, boolean
 - to declare a variable, we use a dollar($) sign before the variable name
+    ## Datatype
+    - string: enclosed in double quotes
+    - int: not enclosed in quotes
