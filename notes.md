@@ -56,3 +56,8 @@ comment
 - comments are for notes or some guide for the developers and is ignored by the compiler or interpreter of the language
 
 ---
+
+# Variables 
+
+- a reusable container that holds data like string, integer, float, boolean
+- to declare a variable, we use a dollar($) sign before the variable name
