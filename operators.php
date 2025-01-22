@@ -18,7 +18,11 @@ $counter = 10;
 // $counter++; // same output and working // increment operator
 $counter--; // decrement operator // same as counter = counter - 1;
 
-echo $counter; 
+// Operator Precedence
+
+$total = 1 + 2 - 12 / 5 ** 6; // following the precedence the exponents are solved first, then if the precedence of operators are same then the solution is from left to right
+
+echo $counter , "<br>", $total; 
 ?>
 
 <!DOCTYPE html>
