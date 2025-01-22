@@ -64,3 +64,18 @@ comment
     ## Datatype
     - string: enclosed in double quotes
     - int: not enclosed in quotes
+    - float: decimal numbers
+    - boolean: true -> 1 and false -> represents white space
+
+# Operators
+- Arithmetic Operators
+    - '+', - ,*, /, **, %
+
+- Increment/Decrement Operators
+    - ++, --
+
+- Operators Precedence
+    - ()
+    - **
+    - '*' / %
+    - '+' '-' 
