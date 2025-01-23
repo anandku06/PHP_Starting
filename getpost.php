@@ -19,8 +19,9 @@
 <?php
 
 // echo $_GET["username"]; // using get variable to get the form info as the form method is set to get
+// the problem is it appends the info submitted to the URL
 // to get the info from the form, using the $_GET variable and with the square brackets, type in the name of the info you need under quotes
 
-echo "<br>", $_POST["username"];
+echo "<br>", $_POST["username"]; // same goes for the post var as well
 
 ?>
