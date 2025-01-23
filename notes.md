@@ -79,3 +79,21 @@ comment
     - **
     - '*' / %
     - '+' '-' 
+
+# $_GET, $_POST
+- special variables used to collect data from an HTML form data is sent to the file in the action attribute of form tag
+    1. $_GET
+    - data is not appended to the URL
+    - NOT SECURE
+    - char limit
+    - bookmark is possible w/ values
+    - GET requests can be cached
+    - better for a search page
+
+    2. $_POST
+    - data is packaged inside the body of the HTTP request
+    - MORE SECURE
+    - no data limit
+    - cannot bookmark
+    - get requests are not cached
+    - better for submitting credentials
