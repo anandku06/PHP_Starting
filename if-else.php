@@ -12,12 +12,17 @@
 
 <?php
 // if statement -> if some condition is true, then we do something
-// else statement -> if the 'if' statement is false, then we do somthing
+// else statement -> if all the conditions are false, then we do something
+// elseif statement -> if the 'if' statement is false, then it'll be checked 
+// note that the conditions are checked top-bottom, so if the upper conditions became true then the actual conditon may not be evaluated
 
-$age = 12;
+$age = -12;
 
 if ($age >= 18) {
     echo "You may enter this site!! <br>";
+}
+elseif( $age < 0) {
+    echo "You haven't born yet!!! <br>";
 }
 else{
     echo "You are too young for this!! <br>";
