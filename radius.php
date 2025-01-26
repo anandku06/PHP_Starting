@@ -19,6 +19,7 @@
 $radius = $_POST["radius"];
 $circumference = null;
 $area = null;
+$volume = null;
 
 $circumference = 2 * pi() * $radius;
 $circumference = round($circumference, 2); // round function takes two args, one the number to be round off and then the precision
@@ -26,6 +27,9 @@ $circumference = round($circumference, 2); // round function takes two args, one
 $area = pi() * pow($radius, 2);
 $area = round($area, 2);
 
+$volume = 4/3 * pi() * pow($radius,2);
+$volume = round($volume, 2);
+
 echo "Circumference: {$circumference}cm <br>";
-echo "Area is: {$area}cm <br>";
+echo "Area is: {$area}cm^2 <br>";
 ?>
