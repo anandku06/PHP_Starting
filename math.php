@@ -40,6 +40,10 @@ $total = pow($x, $y); // returns the raised value by the specified number ; expo
 $total = sqrt($x); // returns the square root of the number
 $maximum = max($x, $y, $z); // returns the maximum number
 $minimum = min($x, $y, $z); // returns the minimum number
+$total = pi(); // return the value of PI
+$total = rand(); // returns the random number between 0 - 2 billion
+
+
 echo"".$total."<br>";
 echo"".$minimum."<br>";
 
