@@ -38,4 +38,15 @@ if(!$cloudy){ // here when cloudy is true then it is considered as false and vic
 else{
     echo "It's cloudy!!<br>";
 }
+
+
+$age = 25;
+$citizen = true;
+
+if($citizen && $age >= 18){
+    echo "You can vote!!<br>";
+}
+else{
+    echo "You can't vote!!<br>";
+}
 ?>
