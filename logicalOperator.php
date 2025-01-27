@@ -11,5 +11,31 @@
 </html>
 
 <?php
+// Logical operators: combine conditional statements
+// if(condition1 &&/|| condition2)
 
+// && -> true if both conditions are trur
+// || -> true if atleast one condition is true
+// ! -> true if false and vice-versa
+
+$temp = 125;
+$cloudy = true;
+
+// if ($temp >= 0 && $temp <= 30) // here the both condition should be true then the if statement will work
+
+// if ($temp >= 0 || $temp <= 30) // here atleast one condition should be true
+
+if ($temp >= 0 || $temp <= 30) {
+    echo "Weather is good!!<br>";
+} 
+else{
+    echo "The weather is bad!!<br>";
+}
+
+if(!$cloudy){ // here when cloudy is true then it is considered as false and vice-versa
+    echo "It's sunny!!<br>";
+}
+else{
+    echo "It's cloudy!!<br>";
+}
 ?>
