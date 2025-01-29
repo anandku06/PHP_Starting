@@ -6,7 +6,11 @@
     <title>Associative Array</title>
 </head>
 <body style="background-color: #212121; color: #fff">
-    
+    <form action="./associativeArray.php" method="post">
+        <label for="country">Enter a country: </label>
+        <input type="text" name="country">
+        <input type="submit">
+    </form>
 </body>
 </html>
 
@@ -21,6 +25,10 @@ $capitals = array(
     "South Korea" => "Seoul",
     "India" => "New Delhi"
 ); // this is how a associative arrays are defined ; using key => value pairs
+
+$capital = $capitals[$_POST["country"]];
+
+echo "The capital is -> " . $capital . "<br>";
 
 echo $capitals["USA"] . "<br>"; // this is how to access the values in associative array, using keys as indices
 
