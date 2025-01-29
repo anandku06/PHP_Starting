@@ -38,6 +38,11 @@ foreach($capValues as $value){
     echo "$value <br>";
 }
 
+$capFlipped = array_flip($capitals); // flips the keys and values to each other and returns the new array
+foreach($capFlipped as $key => $value){
+    echo "$key => $value <br>";
+}
+
 foreach($capitals as $key => $value){
     echo "$key => $value <br>";
 } // in the foreach loop giving the key and value as the vars for the pairs in the array to access them
