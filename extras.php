@@ -36,11 +36,11 @@ else{
 }
 
 //$_POST is technically an associative array that can be iterated when needed ; by using the foreach loop we can get the details of the form element
-/*
+
 foreach($_POST as $key => $value){
     echo $key."=".$value."<br>";
 }
-*/
+
 
 if(isset($_POST["login"])){
     $userName = $_POST["username"];
