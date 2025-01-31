@@ -20,8 +20,9 @@ this is how you declare a function ;
 function (keyword) functionName (arguemnts (if any)) { body }
 
 we can pass arguments to the function as variable and use them in the code
+to avoid type error we can specify the datatype of the args we need like int, float, etc.
 */
-function happyBirthday($name){
+function happyBirthday(string $name){ // datatype will accept only the data with the same datatype
     echo "Happy Birthday to you!!! <br>";
     echo "Happy Birthday to $name!!! <br><br>"; // now we use that given arguments here
 } 
@@ -32,7 +33,7 @@ happyBirthday("Keshav"); // this is how you invoke or call the function using th
 happyBirthday("Ayush");
 happyBirthday("Anand");
 
-function evenOrOdd($num){
+function evenOrOdd(int $num){
     return $num % 2 == 0 ? "Even!!<br>" : "Odd!!<br>";
 }
 // you can return any value from the function if needed using the return keyword!!
