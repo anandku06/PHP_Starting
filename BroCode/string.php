@@ -32,13 +32,14 @@ $user = substr($userName, 0, 4); // returns a new string from the specified stri
 
 $fullName = explode(" ", $userName); // converts the string into multiple strings according to the seperator
 
-$fullName = implode("-", $fullName); // joins the multiple strings into a single array with seperator assigned
+$joinedName = implode("-", $fullName); // joins the multiple strings into a single array with seperator assigned
 
 echo $userName . "<br>";
 echo $phoneNumber . "<br>";
 echo $equals . "<br>";
 echo $length . "<br>";
 echo $posi . "<br>";
+echo $joinedName . "<br>";
 
 foreach ($fullName as $key){
     echo $key ."<br>";
