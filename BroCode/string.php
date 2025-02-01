@@ -30,11 +30,18 @@ $posi = strpos($userName,"r"); // returns the position of the specified element 
 
 $user = substr($userName, 0, 4); // returns a new string from the specified string according to the starting and ending position given
 
+$fullName = explode(" ", $userName); // converts the string into multiple strings according to the seperator
+
+$fullName = implode("-", $fullName); // joins the multiple strings into a single array with seperator assigned
 
 echo $userName . "<br>";
 echo $phoneNumber . "<br>";
 echo $equals . "<br>";
 echo $length . "<br>";
 echo $posi . "<br>";
+
+foreach ($fullName as $key){
+    echo $key ."<br>";
+}
 
 ?>
