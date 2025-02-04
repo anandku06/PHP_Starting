@@ -12,19 +12,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LogIN</title>
 </head>
 <body style="background-color: #212121; color: #fff">
-    This is the LogIN page. <br>
-    <a href="./home.php">This goes to our Home page</a> <br>  
+    <form action="./index.php" method="post">
+        Username: <br>
+        <input type="text" name="username"> <br>
+        Password: <br>
+        <input type="password" name="password"> <br>
+
+        <input type="submit" name="login" value="Login">
+    </form> 
 </body>
 </html>
 
 <?php 
 
-    $_SESSION["username"] = "anand";
-    $_SESSION["password"] = "a123";
+    // $_SESSION["username"] = "anand"; // this global variable stores the session creds like username, password etc. as key => value pairs 
+    // $_SESSION["password"] = "a123";
 
-    echo $_SESSION["username"] . "<br>" . $_SESSION["password"] . "<br>";
+    if(isset($_POST["login"])){
+        
+        if(!empty($_POST["username"]) && !empty($_POST["password"])){
+            $_SESSION["username"] = $_POST["username"]; // first sanitizing the input then assigning to the session
+            $_SESSION["password"] = $_POST["password"];
+
+            header("Location: ./home.php"); // takes raw HTTP headers and also used to create routes
+
+            exit("Routing to Home page!!");
+        }
+        else{
+            echo "Username/Password missing!! <br>";
+        }
+    }
 
 ?>
