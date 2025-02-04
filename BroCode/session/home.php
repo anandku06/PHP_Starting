@@ -6,13 +6,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: #212121; color: #fff">
-    
+    This is the Home page. <br>
+    <a href="./index.php">This goes to our LogIN page</a> <br>  
 </body>
 </html>
-
-<?php 
-    // session -> a super-global variable used to store information on a user to be used across multiple pages.
-    // a user is assigned a session-id ex. login credentials
-
-    
-?>
