@@ -20,9 +20,10 @@
 <?php 
 
 if(isset($_POST["logout"])){
-    session_unset();
+    // session_unset(); // frees all the session variables stored
     session_destroy(); // destroys the session without saving any session variables 
     header("Location: ./index.php");
+    // after session ends redirected to the login page
 }
 
 ?>
