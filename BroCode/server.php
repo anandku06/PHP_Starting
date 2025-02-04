@@ -28,4 +28,9 @@
     // foreach($_SERVER as $key => $value) {
     //     echo $key . " => " . $value ."<br>";
     // }
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        echo "Hello!! <br>";
+    }
+    // to check whether the form is POST or not
 ?>
