@@ -7,16 +7,15 @@ $db_pass = ""; // password for the db
 $db_name = "businessDB"; // name of the db
 $conn = ""; 
 
-$conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name);
-// used to establish a new connection to the database
-// takes four args -> serverName, user, pass, and nameDB 
-// if connection is successful, then this conn var is now an object
-
-
-if ($conn){
-    echo "You are connected!! <br>";
+try{
+    $conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name);
+    // used to establish a new connection to the database
+    // takes four args -> serverName, user, pass, and nameDB 
+    // if connection is successful, then this conn var is now an object
 }
-else{
-    echo "Connectino lost!! <br>";
+// bcz if the connection is failed then to show a custom error message
+catch(mysqli_sql_exception){
+    echo "Connection lost!! <br>";
 }
+// exception when the sql server is not connected, handled with a custom error message
 ?>
