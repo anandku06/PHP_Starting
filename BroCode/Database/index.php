@@ -4,10 +4,20 @@
 // 2. PDO (PHP Data Objects)
 include("./database.php"); // including the database connection file
 
-$sql = "INSERT INTO users (user, password)
-VALUES ('Peter', 'petre123')"; // giving a sql query to insert the values to DB
+$userName = "Patty";
+$passWord = "squid1233";
+$hash = password_hash($passWord, PASSWORD_DEFAULT);
 
-mysqli_query($conn, $sql); // performs the query ($sql) on the specified DB($conn)
+$sql = "INSERT INTO users (user, password)
+VALUES ('$userName', '$hash')"; // giving a sql query to insert the values to DB
+
+try{
+    mysqli_query($conn, $sql); // performs the query ($sql) on the specified DB($conn)
+    echo "User registered!! <br>";
+}
+catch(mysqli_sql_exception){
+    echo "Couldn't registered the user!! <br>";
+}
 
 mysqli_close($conn); // this is to close the connection made to the database
 ?>
