@@ -3,6 +3,13 @@
 // 1. MySQLi extension
 // 2. PDO (PHP Data Objects)
 include("./database.php"); // including the database connection file
+
+$sql = "INSERT INTO users (user, password)
+VALUES ('Peter', 'petre123')"; // giving a sql query to insert the values to DB
+
+mysqli_query($conn, $sql); // performs the query ($sql) on the specified DB($conn)
+
+mysqli_close($conn); // this is to close the connection made to the database
 ?>
 
 
