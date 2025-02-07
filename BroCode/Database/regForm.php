@@ -30,7 +30,30 @@ include("./database.php");
 </html>
 
 <?php 
-mysqli_close($conn);
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $username = filter_input(INPUT_POST,'username', FILTER_SANITIZE_SPECIAL_CHARS);
+    $password = filter_input(INPUT_POST,'password', FILTER_SANITIZE_SPECIAL_CHARS);
 
+    if(empty($username) || empty($password)){
+        echo "Add credentials!!! <br>";
+    }
+    else{
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+
+        $sql = "INSERT INTO users (user, password) VALUES('$username', '$hash')";
+
+        try{
+            mysqli_query($conn, $sql);
+            echo "User is registered!! <br>";
+        }catch(mysqli_sql_exception){
+            echo "User can't be registered!! <br>";
+        }
+    }
+
+}
+
+
+
+mysqli_close($conn);
 // using the 'PHP_SELF' key of the SERVER SGV for the filename and enclosing with 'htmlspecialchars()' function to avoid XSS
 ?>
