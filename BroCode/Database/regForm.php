@@ -12,15 +12,15 @@ include("./database.php");
     <title>Registration Form</title>
 </head>
 <body class="p-8">
-    <div class="mx-auto container bg-gray-200 border-2 border-gray-400 shadow-lg">
+    <div class="mx-auto bg-gray-200 border-2 border-gray-400 shadow-lg">
         <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             <h2 class="p-8 text-cyan-400 text-center text-3xl font-semibold underline decoration-4">Welcome to FakeBook!!</h2>
 
             <div class="p-4 mt-4">
             Username:
-            <input type="text" name="username" placeholder="Enter your username" class="m-4"> <br>
+            <input type="text" name="username" placeholder="Enter your username" class="m-4 shadow-lg rounded focus:outline placeholder:italic"> <br>
             Password:
-            <input type="password" name="password" placeholder="Enter your password" class="m-4"> <br>
+            <input type="password" name="password" placeholder="Enter your password" class="m-4 shadow-lg rounded focus:outline placeholder:italic"> <br>
 
             <input type="submit" name="submit" value="Register" class="p-1 bg-white cursor-pointer border-2 border-black rounded-lg">
             </div>
@@ -51,8 +51,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 
 }
-
-
 
 mysqli_close($conn);
 // using the 'PHP_SELF' key of the SERVER SGV for the filename and enclosing with 'htmlspecialchars()' function to avoid XSS
