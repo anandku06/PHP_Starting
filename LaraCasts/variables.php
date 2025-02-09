@@ -6,3 +6,9 @@ echo "$name , Hello!! <br>"; // to use the var with the string we use doublw quo
 echo '$name , Hello!! <br>'; // here using the single quotes will consider the var as string 
 
 ?>
+
+<?= 
+"Hello Guys"  
+
+// short-hand version of -> "<?php echo "Hello Guys";
+?>
