@@ -12,14 +12,17 @@
         $books = [
             "Do Androids Dream of Electric Sheep",
             "The Langoliers",
-            "Hail Mary"
+            "Project Hail Mary"
         ]; // declared an array of books
     ?>
 
     <ul>
     <!-- Looped the books array using the short-hand foreach loop -->
         <?php foreach( $books as $book ) : ?>
+            <!-- Short-hand for if-else -->
+            <?php if($book !== "The Langoliers") : ?>
             <li><?= $book ?></li>
+            <?php endif; ?>
         <?php endforeach ?>
     </ul>
 </body>
