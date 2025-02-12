@@ -52,12 +52,5 @@ $filtering = array_filter($fruits, function ($fruit) {
     return $fruit['rate'] >= 200;
 }); // we just implemented the logic of this built-in function
 
-?>
-
-<ul>
-    <?php foreach ($filtering as $item) : ?>
-        <li>
-            <?= $item["name"] ?>
-        </li>
-    <?php endforeach; ?>
-</ul>
+// seperating the logic with the main template(HTML) page
+require_once './lamda.view.php';
