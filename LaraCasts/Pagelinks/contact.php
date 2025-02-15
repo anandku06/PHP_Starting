@@ -3,5 +3,6 @@
 $header = "Contact Us"; // this variable is accessible under the require file as well
 
 // echo ($_SERVER['REQUEST_URI']);
+require "./functions.php";
 
 require("./views/contact.view.php");
