@@ -12,6 +12,6 @@ function dd($value)
     die(); // terminates the PHP script
 }
 
-echo ($_SERVER['REQUEST_URI']);
+// echo ($_SERVER['REQUEST_URI']);
 
 require("./views/index.view.php");
