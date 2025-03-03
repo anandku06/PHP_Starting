@@ -39,7 +39,7 @@
 
             header("Location: ./home.php"); // takes raw HTTP headers and also used to create routes
 
-            exit("Routing to Home page!!");
+            exit("Routing to Home page!!"); // exits the current PHP script, params can be any message to be displayed
         }
         else{
             echo "Username/Password missing!! <br>";
